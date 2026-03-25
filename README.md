@@ -1,8 +1,8 @@
 **KACO Blueplanet Hybrid 10.0 TL3 — Home Assistant Custom Integration**
 
 Overview
-- A Home Assistant custom integration to read data from KACO Blueplanet [Hybrid 10.0 TL3](https://kaco-newenergy.com/de/produkte/blueplanet-hybrid-100-tl3) inverters (hy-sys).
-- Goal: Provide native Home Assistant sensors (power, voltage, energy, battery, temperature). Optional MQTT publishing of the same values.
+- A Home Assistant custom integration to read data from (multiple) KACO Blueplanet [Hybrid 10.0 TL3](https://kaco-newenergy.com/de/produkte/blueplanet-hybrid-100-tl3) inverters (hy-sys).
+- Goal: Provide native Home Assistant sensors (power, voltage, energy, battery, temperature). Optional MQTT publishing (only works with a single Inverter) of the same values.
 
 Example with [Power Flow Card Plus by flixlix](https://github.com/flixlix/power-flow-card-plus)
 
@@ -35,7 +35,7 @@ Installation
   - Restart Home Assistant.
   - In Home Assistant: Settings → Devices & Services → Add Integration → search for "KACO Inverter" and follow the setup flow.
 
-Configuration (Config Flow)
+Configuration (Config Flow) (Repeat for each additional Inverter)
 - Step 1 (required):
   - `inverter_host`: inverter IP address
   - `inverter_port`: inverter port (default: 9760)
@@ -79,6 +79,7 @@ Technical notes
 - The integration connects via TCP to the inverter (default port 9760), sends a brief authentication/handshake packet and then transmits several request packets to retrieve the required values.
 - Default polling interval is 30 seconds. Short intervals increase CPU and network load.
 - MQTT publishing uses `paho-mqtt` (declared as a dependency in `manifest.json`).
+- MQTT publishing only works if a single inverter is configured, otherwise the MQTT Values get mixed.
 
 Troubleshooting
 - Verify the hy-sys settings listed under Prerequisites.
