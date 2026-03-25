@@ -1,10 +1,12 @@
 **KACO Blueplanet Hybrid 10.0 TL3 — Home Assistant Custom Integration**
 
 Overview
-- What: A Home Assistant custom integration to read data from KACO Blueplanet Hybrid 10.0 TL3 inverters (hy-sys).
+- What: A Home Assistant custom integration to read data from KACO Blueplanet [Hybrid 10.0 TL3](https://kaco-newenergy.com/de/produkte/blueplanet-hybrid-100-tl3) inverters (hy-sys).
 - Goal: Provide native Home Assistant sensors (power, voltage, energy, battery, temperature). Optional MQTT publishing of the same values.
 
 Prerequisites
+- Only working with KACO Blueplanet [Hybrid 10.0 TL3](https://kaco-newenergy.com/de/produkte/blueplanet-hybrid-100-tl3)
+- Other Kaco Inverters may be supported by different custom Integrations
 - Firmware: The inverter must run firmware v8.
 - hy-sys configuration (in the inverter / hy-sys software):
   - User Settings → Data Access → Enable Viewer Mode: ENABLED
@@ -13,9 +15,14 @@ Prerequisites
 Warning: Any firmware or configuration changes are performed at your own risk. See the Legal Disclaimer below.
 
 Installation
-- Copy the `kaco_inverter` folder to `<home_assistant_config>/custom_components/kaco_inverter/`.
-- Restart Home Assistant.
-- In Home Assistant: Settings → Devices & Services → Add Integration → search for "KACO Inverter" and follow the setup flow.
+  - HACS (Recommended)
+  - HACS > Integrations > Custom repositories
+  - Add https://github.com/tankcom/kaco_inverter (Integration category)
+- Install kaco_inverter
+- Manual:
+  - Copy the `kaco_inverter` folder to `<home_assistant_config>/custom_components/kaco_inverter/`.
+  - Restart Home Assistant.
+  - In Home Assistant: Settings → Devices & Services → Add Integration → search for "KACO Inverter" and follow the setup flow.
 
 Configuration (Config Flow)
 - Step 1 (required):
