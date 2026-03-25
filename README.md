@@ -7,13 +7,10 @@ Overview
 <div style="display: flex; justify-content: space-between;">
 
 <div style="flex: 1; margin-right: 2%;">
-  <img src="readme/Power_Flow_Example.png" alt="PowerFlowExample" width="100%">
-  <p><small>Example with [Power Flow Card Plus by flixlix](https://github.com/flixlix/power-flow-card-plus)</small></p>
+  <img src="readme/Power_Flow_Example.png" alt="PowerFlowExample" width="100%">  <p><small>Example with [Power Flow Card Plus by flixlix](https://github.com/flixlix/power-flow-card-plus)</small></p>
 </div>
-
 <div style="flex: 1;">
-  <img src="readme/Energy_Dashboard_Example.png" alt="EnergyDashboardExample" width="100%">
-  <p><small>Example with default Energy Dashboard:</small></p>
+  <img src="readme/Energy_Dashboard_Example.png" alt="EnergyDashboardExample" width="100%">  <p><small>Example with default Energy Dashboard:</small></p>
 </div>
 
 </div>
