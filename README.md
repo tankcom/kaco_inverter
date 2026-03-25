@@ -4,17 +4,12 @@ Overview
 - A Home Assistant custom integration to read data from KACO Blueplanet [Hybrid 10.0 TL3](https://kaco-newenergy.com/de/produkte/blueplanet-hybrid-100-tl3) inverters (hy-sys).
 - Goal: Provide native Home Assistant sensors (power, voltage, energy, battery, temperature). Optional MQTT publishing of the same values.
 
-<div style="display: flex; justify-content: space-between;">
+Example with [Power Flow Card Plus by flixlix](https://github.com/flixlix/power-flow-card-plus)
 
-<div style="flex: 1; margin-right: 2%;">
-  <img src="readme/Power_Flow_Example.png" alt="PowerFlowExample" width="100%">  <p><small>Example with [Power Flow Card Plus by flixlix](https://github.com/flixlix/power-flow-card-plus)</small></p>
-</div>
-<div style="flex: 1;">
-  <img src="readme/Energy_Dashboard_Example.png" alt="EnergyDashboardExample" width="100%">  <p><small>Example with default Energy Dashboard:</small></p>
-</div>
+<img src="readme/Power_Flow_Example.png" alt="PowerFlowExample" width="500">
+Example with default Energy Dashboard:
 
-</div>
-
+<img src="readme/Energy_Dashboard_Example.png" alt="EnergyDashboardExample" width="500">
 
 Sensors:
 
