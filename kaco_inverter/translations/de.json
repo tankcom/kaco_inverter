@@ -1,0 +1,87 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "KACO Wechselrichter",
+        "description": "Konfigurieren Sie die Verbindung zu Ihrem KACO Wechselrichter.",
+        "data": {
+          "inverter_host": "IP-Adresse des Wechselrichters",
+          "inverter_port": "Port des Wechselrichters",
+          "update_interval": "Aktualisierungsintervall (Sekunden)",
+          "mqtt_enabled": "MQTT-Veröffentlichung aktivieren"
+        }
+      },
+      "mqtt": {
+        "title": "MQTT-Konfiguration",
+        "description": "Konfigurieren Sie den MQTT-Broker für zusätzliche Datenveröffentlichung.",
+        "data": {
+          "mqtt_host": "MQTT-Server-Adresse",
+          "mqtt_port": "MQTT-Port",
+          "mqtt_username": "MQTT-Benutzername",
+          "mqtt_password": "MQTT-Passwort"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Verbindung zum Wechselrichter nicht möglich. Bitte IP und Port überprüfen."
+    },
+    "abort": {
+      "already_configured": "Dieser Wechselrichter ist bereits konfiguriert."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "KACO Wechselrichter Einstellungen",
+        "description": "Aktualisieren Sie die Verbindungseinstellungen Ihres KACO Wechselrichters.",
+        "data": {
+          "inverter_host": "IP-Adresse des Wechselrichters",
+          "inverter_port": "Port des Wechselrichters",
+          "update_interval": "Aktualisierungsintervall (Sekunden)",
+          "mqtt_enabled": "MQTT-Veröffentlichung aktivieren"
+        }
+      },
+      "mqtt": {
+        "title": "MQTT-Konfiguration",
+        "description": "Konfigurieren Sie den MQTT-Broker für zusätzliche Datenveröffentlichung.",
+        "data": {
+          "mqtt_host": "MQTT-Server-Adresse",
+          "mqtt_port": "MQTT-Port",
+          "mqtt_username": "MQTT-Benutzername",
+          "mqtt_password": "MQTT-Passwort"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Verbindung zum Wechselrichter nicht möglich. Bitte IP und Port überprüfen."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "power_inv_l1": { "name": "Wechselrichter Leistung L1" },
+      "power_inv_l2": { "name": "Wechselrichter Leistung L2" },
+      "power_inv_l3": { "name": "Wechselrichter Leistung L3" },
+      "power_inv_total": { "name": "Wechselrichter Leistung Gesamt" },
+      "power_net_total": { "name": "Netzleistung Gesamt" },
+      "p_pv": { "name": "PV-Leistung" },
+      "p_bat": { "name": "Batterieleistung" },
+      "power_sum_cons": { "name": "Verbrauch Gesamt" },
+      "u_pv_1": { "name": "PV-Spannung String 1" },
+      "u_pv_2": { "name": "PV-Spannung String 2" },
+      "u_bat": { "name": "Batteriespannung" },
+      "soc_bat": { "name": "Batterie-Ladezustand" },
+      "today_grid_feed_in": { "name": "Netzeinspeisung Heute" },
+      "today_cons_from_grid": { "name": "Netzbezug Heute" },
+      "today_cons_self": { "name": "Eigenverbrauch Heute" },
+      "today_battery_energy_volume": { "name": "Batterie-Energievolumen Heute" },
+      "real_grid_feed_in_today": { "name": "Netto-Netzbezug Heute" },
+      "this_month_grid_feed_in": { "name": "Netzeinspeisung Monat" },
+      "this_month_cons_from_grid": { "name": "Netzbezug Monat" },
+      "this_month_today_cons_self": { "name": "Eigenverbrauch Monat" },
+      "this_month_battery_energy_volume": { "name": "Batterie-Energievolumen Monat" },
+      "real_grid_feed_in_month": { "name": "Netto-Netzbezug Monat" },
+      "temp_inverter": { "name": "Wechselrichter-Temperatur" },
+      "bat_cycles": { "name": "Batteriezyklen" }
+    }
+  }
+}

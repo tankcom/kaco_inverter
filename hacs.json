@@ -1,0 +1,9 @@
+{
+  "name": "KACO Inverter",
+  "description": "Home Assistant integration for KACO Blueplanet Hybrid 10.0 TL3 inverters.",
+  "homeassistant": "2021.12.0",
+  "iot_class": "local_polling",
+  "requirements": ["paho-mqtt>=2.0.0"],
+  "hacstype": "integration",
+  "version": "1.0.0"
+}

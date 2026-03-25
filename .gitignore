@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Local test/debug files
+*.test.py
+test_*.py
+debug_*.py
+send_request_*.py
+kaco_export_*.py
+kaco export run.py
+DEPLOYMENT.md
+
+# Home Assistant
+.homeassistant/
+config/
+
+# OS-specific
+Thumbs.db
+.DS_Store
+
+# Virtual environments
+venv/
+ENV/
+env/
+
+# Local credentials/config (if accidentally added)
+.env
+.secrets
+local_config.yaml

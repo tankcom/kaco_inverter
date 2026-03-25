@@ -1,0 +1,11 @@
+{
+  "domain": "kaco_inverter",
+  "name": "KACO Inverter",
+  "codeowners": [],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "",
+  "iot_class": "local_polling",
+  "requirements": ["paho-mqtt>=2.0.0"],
+  "version": "1.0.0"
+}

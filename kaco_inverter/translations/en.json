@@ -1,0 +1,87 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "KACO Inverter",
+        "description": "Configure your KACO inverter connection.",
+        "data": {
+          "inverter_host": "Inverter IP address",
+          "inverter_port": "Inverter port",
+          "update_interval": "Update interval (seconds)",
+          "mqtt_enabled": "Enable MQTT publishing"
+        }
+      },
+      "mqtt": {
+        "title": "MQTT Configuration",
+        "description": "Configure MQTT broker for additional data publishing.",
+        "data": {
+          "mqtt_host": "MQTT server address",
+          "mqtt_port": "MQTT port",
+          "mqtt_username": "MQTT username",
+          "mqtt_password": "MQTT password"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Cannot connect to inverter. Please check IP and port."
+    },
+    "abort": {
+      "already_configured": "This inverter is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "KACO Inverter Settings",
+        "description": "Update your KACO inverter connection settings.",
+        "data": {
+          "inverter_host": "Inverter IP address",
+          "inverter_port": "Inverter port",
+          "update_interval": "Update interval (seconds)",
+          "mqtt_enabled": "Enable MQTT publishing"
+        }
+      },
+      "mqtt": {
+        "title": "MQTT Configuration",
+        "description": "Configure MQTT broker for additional data publishing.",
+        "data": {
+          "mqtt_host": "MQTT server address",
+          "mqtt_port": "MQTT port",
+          "mqtt_username": "MQTT username",
+          "mqtt_password": "MQTT password"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Cannot connect to inverter. Please check IP and port."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "power_inv_l1": { "name": "Inverter Power L1" },
+      "power_inv_l2": { "name": "Inverter Power L2" },
+      "power_inv_l3": { "name": "Inverter Power L3" },
+      "power_inv_total": { "name": "Inverter Power Total" },
+      "power_net_total": { "name": "Net Power Total" },
+      "p_pv": { "name": "PV Power" },
+      "p_bat": { "name": "Battery Power" },
+      "power_sum_cons": { "name": "Consumption Power Total" },
+      "u_pv_1": { "name": "PV Voltage String 1" },
+      "u_pv_2": { "name": "PV Voltage String 2" },
+      "u_bat": { "name": "Battery Voltage" },
+      "soc_bat": { "name": "Battery SOC" },
+      "today_grid_feed_in": { "name": "Grid Feed-in Today" },
+      "today_cons_from_grid": { "name": "Grid Consumption Today" },
+      "today_cons_self": { "name": "Self Consumption Today" },
+      "today_battery_energy_volume": { "name": "Battery Energy Today" },
+      "real_grid_feed_in_today": { "name": "Net Grid Consumption Today" },
+      "this_month_grid_feed_in": { "name": "Grid Feed-in Month" },
+      "this_month_cons_from_grid": { "name": "Grid Consumption Month" },
+      "this_month_today_cons_self": { "name": "Self Consumption Month" },
+      "this_month_battery_energy_volume": { "name": "Battery Energy Month" },
+      "real_grid_feed_in_month": { "name": "Net Grid Consumption Month" },
+      "temp_inverter": { "name": "Inverter Temperature" },
+      "bat_cycles": { "name": "Battery Cycles" }
+    }
+  }
+}
