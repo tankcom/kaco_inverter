@@ -5,12 +5,15 @@ Overview
 - Goal: Provide native Home Assistant sensors (power, voltage, energy, battery, temperature). Optional MQTT publishing of the same values.
 
 Example with [Power Flow Card Plus by flixlix](https://github.com/flixlix/power-flow-card-plus)
+
 <img src="readme/Power_Flow_Example.png" alt="PowerFlowExample" width="500">
 Example with default Energy Dashboard:
+
 <img src="readme/Energy_Dashboard_Example.png" alt="EnergyDashboardExample" width="500">
 
 Sensors:
-<img src="readme/Sensors.png" alt="Sensor List" width="4000">
+
+<img src="readme/sensors.png" alt="Sensor List" width="4000">
 
 Prerequisites
 - Only working with KACO Blueplanet [Hybrid 10.0 TL3](https://kaco-newenergy.com/de/produkte/blueplanet-hybrid-100-tl3)
