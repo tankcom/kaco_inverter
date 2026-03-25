@@ -13,7 +13,7 @@ Example with default Energy Dashboard:
 
 Sensors:
 
-<img src="readme/sensors.png" alt="Sensor List" width="400">
+<img src="readme/sensors.png" alt="Sensor List" width="200">
 
 Prerequisites
 - Only working with KACO Blueplanet [Hybrid 10.0 TL3](https://kaco-newenergy.com/de/produkte/blueplanet-hybrid-100-tl3)
