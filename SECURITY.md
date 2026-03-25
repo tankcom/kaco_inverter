@@ -26,6 +26,7 @@ Please include:
 ## Known Limitations
 - The integration relies on the inverter's TCP interface being available on the local network.
 - Inverter firmware v8 is required; compatibility with other versions is untested.
+- MQTT Export only works if a single Inverter is configured, otherwise the MQTT Values are mixed from all configured Inverters. If you need MQTT with multiple            configured Inverteres use Home Assistant Automations for MQTT export instead.
 
 ## Reporting Other Issues
 For bug reports or feature requests (non-security), please open a GitHub issue with:
